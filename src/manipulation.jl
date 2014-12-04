@@ -22,6 +22,8 @@ Base.setindex!(elem::HTMLElement,i,val) = setindex!(elem.children,i,val)
 
 Base.push!(elem::HTMLElement,val) = push!(elem.children, val)
 
+#Add pop! capability
+Base.pop!(elem::HTMLElement) = pop!(elem.children)
 
 # text
 
